@@ -589,6 +589,7 @@ RegisterNetEvent('hospital:client:Revive', function()
     TriggerServerEvent('hud:server:RelieveStress', 100)
     TriggerServerEvent("hospital:server:SetDeathStatus", false)
     TriggerServerEvent("hospital:server:SetLaststandStatus", false)
+    TriggerServerEvent("hospital:server:SetArmor", 0)
     emsNotified = false
     QBCore.Functions.Notify(Lang:t('info.healthy'))
 end)
